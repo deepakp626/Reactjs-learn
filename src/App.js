@@ -7,7 +7,9 @@ import Person  from './Components/Person/Person.js';
 
 // import Demo from './Components/Demo'
 import { Component } from 'react';
-import Form from './Components/Form';
+import  Form from './Components/Form';
+import ControlledComponent from './Components/ControlledComponent';
+
 
 
 
@@ -96,10 +98,17 @@ class App extends Component{
         <Person  name={this.state.persons[2].name} age={this.state.persons[2].age}/> */}
 
         {/*  */}
-        <button onClick={this.toggalHandlar}>Toggal</button>
+        {/* <button onClick={this.toggalHandlar}>Toggal</button>
         {
          persons
-        }
+        } */}
+
+
+        {/* Form input handling */}
+        {/* <Form /> */}
+
+        {/* Controlled component */}
+        <ControlledComponent />
        </div>
 
     )
